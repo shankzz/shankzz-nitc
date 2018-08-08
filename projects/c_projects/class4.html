@@ -1,0 +1,26 @@
+<html>
+<head>
+   <title>Class 4</title>
+</head>
+
+<body>
+<script>
+function check()
+{
+    if(document.getElementById("password").value.length>6)
+    {
+        msg="Good";
+    }
+    else 
+    {
+        msg="Poor";
+    }
+}
+</script>
+
+<form>
+<input type="text" id="password" value="" onkeyup="check()"/>
+Strength: <span id="demo">no Strength</span>
+</form>
+</body>
+</html>
